@@ -1,0 +1,18 @@
+<h1>
+    {{title}}
+</h1>
+<div class="row container-fluid">
+    <div class="col-md-6">
+        <div *ngFor='let quote of quote' class="container">
+            <h2>
+                {{quote.saying}}
+            </h2>
+            <app-quotes-details [quote]='quote'></app-quotes-details>
+
+        </div>
+    </div>
+    <div class="col-md-6">
+        <app-quotes-form></app-quotes-form>
+    </div>
+
+</div>
