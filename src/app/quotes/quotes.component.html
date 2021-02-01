@@ -3,11 +3,13 @@
 </h1>
 <div class="row container-fluid">
     <div class="col-md-6">
-        <div *ngFor='let quote of quote' class="container">
+        <div *ngFor='let quote of quotes' class="container">
             <h2>
                 {{quote.saying}}
             </h2>
-            <app-quotes-details [quote]='quote'></app-quotes-details>
+            <app-quotes-details  [quote]='quote'></app-quotes-details>
+            <button class="btn btn-danger" (click) = 'deleteQuote(i)' >DELETE</button>
+<p>
 
         </div>
     </div>

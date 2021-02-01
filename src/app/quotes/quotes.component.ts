@@ -9,11 +9,15 @@ export class QuotesComponent implements OnInit {
 
 
   title = 'INSPIRATIONAL QUOTES';
-  quote : Quote [] = [
-    {saying : 'Dont worry. Be happy.' , author:'Endarasha Kimworia', name:'Kipkirui Kigen'},
-    {saying : 'Be the change you want to see.' , author:'Endarasha Kimworia',name:'Oliver Mswazi'},
-    {saying:'Be good for good.' , author:'Anthony Muiruri',name:'Creator Me'}
+  quotes = [
+    new Quote ('Dont worry. Be happy.','Endarasha Kimworia','Kipkirui Kigen'),
+    new Quote ('Be the change you want to see.','Endarasha Kimworia','Oliver Mswazi' ),
+    new Quote ('Be good for good.','Anthony Muiruri','Creator Me')
   ]
+
+  deleteQuote(i:number){
+    this.quotes.splice(i,1)
+  }
   constructor() { }
 
   ngOnInit(): void {
