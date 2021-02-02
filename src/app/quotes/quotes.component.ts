@@ -15,8 +15,8 @@ export class QuotesComponent implements OnInit {
     new Quote ('Be good for good.','Anthony Muiruri','Creator Me')
   ]
 
-  addNewQuote(newquote: Quote) {
-    this.quotes.push(newquote)
+  addNewQuote(Quote: Quote) {
+    this.quotes.push(Quote)
   }
 
   upvote(i: number) {
@@ -28,9 +28,10 @@ export class QuotesComponent implements OnInit {
   deleteQuote(i:number){
     this.quotes.splice(i,1)
   }
+
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }

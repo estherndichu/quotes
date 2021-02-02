@@ -6,11 +6,16 @@ import {Quote} from '../quote'
   styleUrls: ['./quotes-form.component.css']
 })
 export class QuotesFormComponent implements OnInit {
-  newQuote = new Quote("","","");
-  @Output () addQuote = new EventEmitter <Quote>();
+
+  @Output () addQuote = new EventEmitter
+  publisher!: string; 
+  writer!: string; 
+  theQuote!: string;
+  theWords : any
 
   submitQuote () {
-    this.addQuote.emit(this.newQuote);
+    this.theWords = new Quote(this.publisher,this.writer,this.theQuote)
+    this.addQuote.emit(this.theWords);
   }
   constructor() { }
 

@@ -7,13 +7,17 @@ import { QuotesComponent } from './quotes/quotes.component';
 import { QuotesFormComponent } from './quotes-form/quotes-form.component';
 import { QuotesDetailsComponent } from './quotes-details/quotes-details.component';
 import { from } from 'rxjs';
+import { HighestUpvoteDirective } from './highest-upvote.directive';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuotesComponent,
     QuotesFormComponent,
-    QuotesDetailsComponent
+    QuotesDetailsComponent,
+    HighestUpvoteDirective,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
