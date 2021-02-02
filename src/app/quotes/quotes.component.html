@@ -8,11 +8,14 @@
                 {{quote.saying}}
             </h2>
             <app-quotes-details [quote]='quote'></app-quotes-details>
+            <div class="row">
+                <button class="btn btn-primary btn-lg"  (click)="upvote(i)">Upvote </button>
+                <button class="btn btn-info btn-dark" (click)="downvote(i)">Downvote </button>
+    
+                <button class="btn btn-danger btn-lg" (click)='deleteQuote(i)'>DELETE</button>
+            </div>
 
-            <button class="btn btn-info" (click)="upvote(i)">Upvote </button>
-            <button class="btn btn-info" (click)="downvote(i)">Downvote </button>
 
-            <button class="btn btn-danger" (click)='deleteQuote(i)'>DELETE</button>
 
 
         </div>
