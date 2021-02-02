@@ -4,8 +4,18 @@
 #### By [Esther Ndichu](https://github.com/estherndichu)
 
 ## Description
-This application offers a wide range of quotes from all over the world. The site displays the quotes, its original author and the person who posted the quote on the site. A user can also view how long ago the quote was posted.
+* This application offers a wide range of quotes from all over the world. The site displays the quotes, its original author and the person who posted the quote on the site. A user can also view how long ago the quote was posted.
+* The user can also upvote or downvote a quote.
 
+## Setup/Installation Requirements
+* Open terminal on your computer.
+* cd the location where you want this project.
+* git clone https://github.com/estherndichu/quotes
+* Create your own github branch and edit the code as you wish.
+
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Technologies used
 Angular CLI
