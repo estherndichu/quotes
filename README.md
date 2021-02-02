@@ -1,6 +1,18 @@
-# QUOTESAPP
+# QUOTES APP
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.1.
+#### This is a website where you can view your favorite quotes and also add quotes if interested.
+#### By [Esther Ndichu](https://github.com/estherndichu)
+
+## Description
+This application offers a wide range of quotes from all over the world. The site displays the quotes, its original author and the person who posted the quote on the site. A user can also view how long ago the quote was posted.
+
+
+## Technologies used
+Angular CLI
+
+## Support and contact details
+For any queries or further clarification on the directions to use the application, contact via email:itskuijenga@gmail.com
+
 
 ## Development server
 
