@@ -2,14 +2,14 @@
     {{title}}
 </h1>
 <div class="row container-fluid">
-    <div class="col-md-6">
-        <div *ngFor='let quote of quotes' class="container">
+    <div class="col-md-6 container">
+        <div *ngFor='let quote of quotes'>
             <h2>
                 {{quote.saying}}
             </h2>
             <app-quotes-details  [quote]='quote'></app-quotes-details>
-            <button class="btn btn-danger" (click) = 'deleteQuote(i)' >DELETE</button>
-<p>
+            <button class="btn btn-danger" (click) = 'deleteQuote(0)'>DELETE</button>
+
 
         </div>
     </div>
