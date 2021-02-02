@@ -1,13 +1,16 @@
-.card {
-    padding: 5%;
-    border: 2%;
-  }
+
  h1 {
      text-align: center;
      text-decoration: underline;
      font-weight: 600;
  }
 
-button {
-    width: 30%;
-}
+ buttons{
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+  .card{
+    margin-bottom: 2%;
+    background-color: aliceblue;
+    box-shadow: 2px 2px 3px 2px black;
+  }

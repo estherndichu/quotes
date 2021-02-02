@@ -6,7 +6,6 @@ import {Quote} from '../quote'
   styleUrls: ['./quotes-form.component.css']
 })
 export class QuotesFormComponent implements OnInit {
-
   @Output () addQuote = new EventEmitter
   publisher!: string; 
   writer!: string; 

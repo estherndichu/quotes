@@ -11,12 +11,12 @@ export class QuotesComponent implements OnInit {
   title = 'INSPIRATIONAL QUOTES';
   quotes = [
     new Quote ('Dont worry. Be happy.','Endarasha Kimworia','Kipkirui Kigen'),
-    new Quote ('Be the change you want to see.','Endarasha Kimworia','Oliver Mswazi' ),
+    new Quote ('Be the change you want to see.','Endarasha Kimworia','Oliver Mswazi'),
     new Quote ('Be good for good.','Anthony Muiruri','Creator Me')
   ]
 
-  addNewQuote(Quote: Quote) {
-    this.quotes.push(Quote)
+  addNewQuote(quote: Quote) {
+    this.quotes.push(quote)
   }
 
   upvote(i: number) {
@@ -31,7 +31,7 @@ export class QuotesComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
