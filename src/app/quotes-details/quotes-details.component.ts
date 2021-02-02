@@ -10,6 +10,8 @@ export class QuotesDetailsComponent implements OnInit {
   constructor() { }
   @Input()
   quote!: Quote;
+  upvotes = 0;
+  downvotes = 0;
 
   ngOnInit(): void {
   }

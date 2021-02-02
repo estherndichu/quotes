@@ -15,6 +15,12 @@ export class QuotesComponent implements OnInit {
     new Quote ('Be good for good.','Anthony Muiruri','Creator Me')
   ]
 
+  upvote(i: number) {
+    this.quotes[i].upvotes ++;
+  }	
+  downvote(i:number) {	    
+    this.quotes[i].downvotes ++;
+  }	
   deleteQuote(i:number){
     this.quotes.splice(i,1)
   }
